@@ -1,0 +1,789 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Электронная очередь в ДОО КР</title>
+<link rel="shortcut icon" href="/static/media/front-end/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="/static/css/flex.css">
+    <link rel="stylesheet" type="text/css" href="/static/css/font-awesome.min.css">
+    <script src="/static/js/jquery-3.2.1.min.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="app">
+        <header class="container clearfix">
+            <div class="left">
+                <a href="/ru/"><div class="logo"></div></a>
+            </div>
+            <div class="right" id="navigation-header-block">
+                <div class="locale">
+                    <div class="title-text">
+                        <a class="auth-link-text">Авторизация <i class="fa fa-user" aria-hidden="true"></i></a>
+                    </div>
+
+
+
+
+
+                </div>
+                <div class="nav-menu">
+                    <nav>
+                        <ul class="nav">
+                            <li><a href="/ru/project/" class="menu">О ПРОЕКТЕ</a></li>
+                            <li><a href="/ru/question_answer/" class="menu">ВОПРОСЫ - ОТВЕТЫ</a></li>
+                            <li><a href="/ru/news/" class="menu">НОВОСТИ</a></li>
+                            <li><a href="/ru/documents/" class="menu">НПА</a></li>
+							         <li><a href="http://statics.balabakcha.edu.gov.kg/" class="menu"> СТАТИСТИКА</a></li>
+							
+
+                            <li><a href="/#contacts" class="menu">ОБРАТНАЯ СВЯЗЬ</a></li>
+                            <li><a href="#" class="menu_status">ПРОВЕРИТЬ СТАТУС ОЧЕРЕДИ</a></li>
+                        </ul>
+                    </nav>
+                    <div class="touch-menu-wrapper">
+                        <a id="touch-menu" style="text-decoration: none"><i class="fa fa-bars" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+
+    
+    <section id="list_questions">
+        <ul id="breadcrumbs-one">
+            <li><a href="/#questions">Главная</a></li>
+            <li><a href="" class="current">Все вопросы с ответами</a></li>
+        </ul>
+        <div class="questions_list">
+            
+                <div class="questions_item">
+                    <div class="questions">
+                        Какое количество детей будет в государственном саду?
+                    
+                    </div>
+                    <div class="answers">
+                        Количество детей варьируется в зависимости от вместимости детского сада, опереленных Государственным стандартом Кыргызской Республики “Дошкольное образование и уход за детьми” и санитарно-гигиеническими нормами.
+                    
+                    </div>
+                </div>
+
+            
+                <div class="questions_item">
+                    <div class="questions">
+                        Сколько нужно заплатить, чтобы очередь скорее дошла до ребенка?
+                    
+                    </div>
+                    <div class="answers">
+                        <p>Нисколько. Вы не можете повлиять на ускорение процесса очереди. Регистрация происходит бесплатно, и ребенок зачисляется абсолютно бесплатно, если вы получили уведомление от системы и предоставили соответствующие документы для зачисления ребенка в ДОО.</p>
+                    
+                    </div>
+                </div>
+
+            
+                <div class="questions_item">
+                    <div class="questions">
+                        Кто проводит проверку документов по приёму и отчислению детей?
+                    
+                    </div>
+                    <div class="answers">
+                        <p>Дошкольная образовательная организация в лице директора:</p>
+
+<p>- формирует и комплектует список детей групп ДОО в соответствии с данными Единого электронного реестра balabakcha.edu.gov.kg;</p>
+
+<p>- ежеквартально, приказом ДОО, отчисляет детей из детского сада в случаях: непосещения ДОО без уважительной причины в течение 2 месяцев, несоблюдения родителями (законными представителями) обязанностей, прописанных в договоре с ДОО;</p>
+
+<p>- ежеквартально, приказом ДОО, зачисляет детей в ДОО при наличии свободного места и уведомления системы &ldquo;Электронная очередь в ДОО&rdquo;.</p>
+                    
+                    </div>
+                </div>
+
+            
+                <div class="questions_item">
+                    <div class="questions">
+                        Могут ли регистрироваться в электронной очереди иностранные граждане? Если да, то каким образом?
+                    
+                    </div>
+                    <div class="answers">
+                        <p>Да, могут. Иностранные граждане выбирают соответствующий язык (кыргызский, русский, английский), далее поле &laquo;не резидент&raquo;, и затем порядок регистрации происходит по заданному шаблону как и для граждан КР.</p>
+                    
+                    </div>
+                </div>
+
+            
+                <div class="questions_item">
+                    <div class="questions">
+                        Как можно отслеживать статус своего ребенка в очереди?
+                    
+                    </div>
+                    <div class="answers">
+                        <p>Проверка статуса в очереди ребенка возможна через номер свидетельства рождения ребенка или регистрационный номер на сайта balabakcha.edu.gov.kg.</p>
+                    
+                    </div>
+                </div>
+
+            
+                <div class="questions_item">
+                    <div class="questions">
+                        Существует ли защита от повторных регистраций? Если да, то какая?
+                    
+                    </div>
+                    <div class="answers">
+                        Система не позволяет вводить повторно данные одного и того же ребенка.
+                    
+                    </div>
+                </div>
+
+            
+                <div class="questions_item">
+                    <div class="questions">
+                        Какие данные необходимо вносить для регистрации?
+                    
+                    </div>
+                    <div class="answers">
+                        <p>Для постановки ребенка в электронную очередь Заявитель заполняет следующие разделы формы заявления:</p>
+
+<p>- Данные о ребенке;</p>
+
+<p>- Данные о заявителе;</p>
+
+<p>- Контактная информация;</p>
+
+<p>- Дополнительная информация;</p>
+
+<p>- Информация о льготах (должна быть подтверждена копиями соответствующих документов (фотокопия, скан копия и т.п.);</p>
+
+<p>- Наименование предпочитаемой Дошкольной образовательной организации (ДОО).</p>
+                    
+                    </div>
+                </div>
+
+            
+                <div class="questions_item">
+                    <div class="questions">
+                        Что такое электронная очередь в ДОО?
+                    
+                    </div>
+                    <div class="answers">
+                        <p>Электронная очередь &ndash; это электронная база данных, которая содержит сведения о ребенке для предоставления места в детском саду. Эта база поможет избежать коррумпированных схем в устройстве детей в детские дошкольные учреждения, поскольку эта умная система предусматривает все этапы передвижения детей в очереди.</p>
+                    
+                    </div>
+                </div>
+
+            
+                <div class="questions_item">
+                    <div class="questions">
+                        Кто занимается мониторингом эффективности системы?
+                    
+                    </div>
+                    <div class="answers">
+                        <p>Общий контроль за соблюдением Регламента электронной очереди осуществляется Министерством образования и науки Кыргызской Республики.</p>
+                    
+                    </div>
+                </div>
+
+            
+                <div class="questions_item">
+                    <div class="questions">
+                        Где можно получить доступ к списку наименований ДОО?
+                    
+                    </div>
+                    <div class="answers">
+                        <p>Список детских садов вы найдете на сайте balabakcha.edu.gov.kg при подаче заявки.</p>
+                    
+                    </div>
+                </div>
+
+            
+                <div class="questions_item">
+                    <div class="questions">
+                        Можно ли выбирать родителям детский сад?
+                    
+                    </div>
+                    <div class="answers">
+                        Да. Родители имеют возможность выбора детского сада.
+                    
+                    </div>
+                </div>
+
+            
+                <div class="questions_item">
+                    <div class="questions">
+                        Есть ли доступ к списку зачисленных детей у пользователей?
+                    
+                    </div>
+                    <div class="answers">
+                        Да, есть на сайте электронной очереди: balabakcha.edu.gov.kg.
+                    
+                    </div>
+                </div>
+
+            
+                <div class="questions_item">
+                    <div class="questions">
+                        Какое мобильное приложение помогает иметь доступ к электронной очереди?
+                    
+                    </div>
+                    <div class="answers">
+                        Приложение можно скачать с сайта balabakcha.edu.gov.kg или с Play Market.
+                    
+                    </div>
+                </div>
+
+            
+                <div class="questions_item">
+                    <div class="questions">
+                        Кто проводит мониторинг и оценку комплектования групп?
+                    
+                    </div>
+                    <div class="answers">
+                        <p>Районные/городские отделы управления образования проводят проверку документов по приему и отчислению детей, сверку фактической численности детей в ДОО согласно Единому электронному реестру и соответствующему банку данных.</p>
+                    
+                    </div>
+                </div>
+
+            
+                <div class="questions_item">
+                    <div class="questions">
+                        Как называется сайт электронной очереди в ДОО?
+                    
+                    </div>
+                    <div class="answers">
+                        <p>Сайт называется balabakcha.edu.gov.kg.</p>
+                    
+                    </div>
+                </div>
+
+            
+                <div class="questions_item">
+                    <div class="questions">
+                        Как можно узнать, что ребёнок зачислен в сад?
+                    
+                    </div>
+                    <div class="answers">
+                        При наличии свободного места родители получают уведомление на электронную почту и/или мобильное приложение.
+                    
+                    </div>
+                </div>
+
+            
+                <div class="questions_item">
+                    <div class="questions">
+                        Что дает семьям Электронная очередь в ДОО?
+                    
+                    </div>
+                    <div class="answers">
+                        <p>- Обеспечит равные права и возможности каждому ребенку на дошкольное образование в ДОО;</p>
+
+<p>- обеспечит социальную поддержку льготным группам граждан;</p>
+
+<p>- окажет социальную поддержку семьям, имеющим детей дошкольного возраста;</p>
+
+<p>- искоренит коррупционные схемы при направлении детей в ДОО;</p>
+
+<p>- урегулирует процесс осуществления приема, сохранения места и отчисления детей из ДОО.</p>
+                    
+                    </div>
+                </div>
+
+            
+                <div class="questions_item">
+                    <div class="questions">
+                        Кто занимается спорными вопросами, возникающими между родителями детей, педагогами и администрацией ДОО?
+                    
+                    </div>
+                    <div class="answers">
+                        <p>Спорные вопросы, возникающие между родителями (законными представителями) детей и администрацией ДОО, разрешаются районными/городскими отделами/управлениями образования в соответствии с действующим законодательством Кыргызской Республики и Регламентом &laquo;Электронная очередь в Дошкольные образовательные организации&raquo;.</p>
+                    
+                    </div>
+                </div>
+
+            
+                <div class="questions_item">
+                    <div class="questions">
+                        Как будут фильтроваться мошенники, которые не имеют детей, однако, регистрируются на сайте ради «забавы»?
+                    
+                    </div>
+                    <div class="answers">
+                        <p>После проверки заявки специалистами информация будет вводиться в базу данных, поэтому подобные инциденты будут исключены.</p>
+                    
+                    </div>
+                </div>
+
+            
+                <div class="questions_item">
+                    <div class="questions">
+                        Как будет происходить отбор сада системой?
+                    
+                    </div>
+                    <div class="answers">
+                        Отбор сада производят сами родители и указывают в заявке.
+                    
+                    </div>
+                </div>
+
+            
+                <div class="questions_item">
+                    <div class="questions">
+                        Кто такой «Заявитель»?
+                    
+                    </div>
+                    <div class="answers">
+                        <p>Заявителем является родитель (законный представитель) ребёнка в возрасте от 6 месяцев&nbsp;до 7 лет, который подает заявку на предоставление места ребенку в ДОО.</p>
+                    
+                    </div>
+                </div>
+
+            
+                <div class="questions_item">
+                    <div class="questions">
+                        Есть ли руководство пользователя?
+                    
+                    </div>
+                    <div class="answers">
+                        <p>Да,&nbsp;https://drive.google.com/file/d/1fRs3Ukv76WTmbwVyPLHF7cBntkhlo5pF/view</p>
+                    
+                    </div>
+                </div>
+
+            
+                <div class="questions_item">
+                    <div class="questions">
+                        Как скоро необходимо предоставить документы после получения уведомления о зачислении в детский сад?
+                    
+                    </div>
+                    <div class="answers">
+                        <p>Заявитель в течение 15 календарных дней с момента получения им на электронную почту уведомления о наличии свободного места в ДОО, должен предоставить необходимые документы по запросу ДОО для зачисления ребенка в группу согласно Государственного стандарта Кыргызской Республики &ldquo;Дошкольное образование и уход за детьми&rdquo;. Если по истечении срока документа не будут предоставлены, место Заявителя в электронной очереди аннулируется.</p>
+                    
+                    </div>
+                </div>
+
+            
+                <div class="questions_item">
+                    <div class="questions">
+                        Что означают &quot;статусы заявки&quot;?
+                    
+                    </div>
+                    <div class="answers">
+                        <p style="margin-left:0cm; margin-right:0cm; text-align:justify"><span style="font-size:11pt"><span style="background-color:white"><span style="font-family:Calibri,sans-serif"><strong><span style="font-size:14.0pt"><span style="font-family:&quot;Times New Roman&quot;,serif"><span style="color:#222222">&laquo;Истечение срока заявки после одобрения&raquo;</span></span></span></strong><span style="font-size:14.0pt"><span style="font-family:&quot;Times New Roman&quot;,serif"><span style="color:#222222"> &ndash; этот статус означает, что заявка аннулирована, поскольку родитель, по истечении 15 календарных дней после получения письма на электронную почту о наличии свободного места в ДОО, не предоставил в ДОО соответствующие документы ребенка. </span></span></span></span></span></span></p>
+
+<p style="margin-left:0cm; margin-right:0cm; text-align:justify"><span style="font-size:11pt"><span style="background-color:white"><span style="font-family:Calibri,sans-serif"><strong><span style="font-size:14.0pt"><span style="font-family:&quot;Times New Roman&quot;,serif"><span style="color:#222222">&laquo;Отклоненная директором с указанием причины&raquo; </span></span></span></strong><span style="font-size:14.0pt"><span style="font-family:&quot;Times New Roman&quot;,serif"><span style="color:#222222">&ndash; этот статус означает, что заявка отклонена директором ДОО после соответствующей проверки документов, по следующим возможным причинам:</span></span></span></span></span></span></p>
+
+<p style="margin-left:0cm; margin-right:0cm; text-align:justify"><span style="font-size:11pt"><span style="background-color:white"><span style="font-family:Calibri,sans-serif"><em><span style="font-size:14.0pt"><span style="font-family:&quot;Times New Roman&quot;,serif"><span style="color:#222222">1. Некорректно введены данные о родителе</span></span></span></em><span style="font-size:14.0pt"><span style="font-family:&quot;Times New Roman&quot;,serif"><span style="color:#222222"> (паспортные данные, скан/фотография паспорта не совпадает с введенными данными и т.д.);</span></span></span></span></span></span></p>
+
+<p style="margin-left:0cm; margin-right:0cm; text-align:justify"><span style="font-size:11pt"><span style="background-color:white"><span style="font-family:Calibri,sans-serif"><em><span style="font-size:14.0pt"><span style="font-family:&quot;Times New Roman&quot;,serif"><span style="color:#222222">2. Некорректно введены данные о ребенке</span></span></span></em><span style="font-size:14.0pt"><span style="font-family:&quot;Times New Roman&quot;,serif"><span style="color:#222222"> (серия или номер свидетельства, скан/фотография свидетельства о рождении не совпадает с введенными данными и т.п.);</span></span></span></span></span></span></p>
+
+<p style="margin-left:0cm; margin-right:0cm; text-align:justify"><span style="font-size:11pt"><span style="background-color:white"><span style="font-family:Calibri,sans-serif"><em><span style="font-size:14.0pt"><span style="font-family:&quot;Times New Roman&quot;,serif"><span style="color:#222222">3. Некорректно введены реквизиты документов о наличии льгот</span></span></span></em><span style="font-size:14.0pt"><span style="font-family:&quot;Times New Roman&quot;,serif"><span style="color:#222222">: например, выбрали &laquo;нет льгот&raquo;, затем прикрепили документ о льготах; при наличии льготы - неправильно ввели данные о льготах (серия и номер документа некорректно введены).</span></span></span></span></span></span></p>
+
+<p style="margin-left:0cm; margin-right:0cm; text-align:justify"><span style="font-size:11pt"><span style="background-color:white"><span style="font-family:Calibri,sans-serif"><span style="font-size:14.0pt"><span style="font-family:&quot;Times New Roman&quot;,serif"><span style="color:#222222">Все комментарии, которые напишет директор, будут автоматически отправлены на почту родителя.</span></span></span></span></span></span></p>
+
+<p style="margin-left:0cm; margin-right:0cm; text-align:justify"><span style="font-size:11pt"><span style="background-color:white"><span style="font-family:Calibri,sans-serif"><strong><span style="font-size:14.0pt"><span style="font-family:&quot;Times New Roman&quot;,serif"><span style="color:#222222">&laquo;В ожидании рассмотрения&raquo;</span></span></span></strong><span style="font-size:14.0pt"><span style="font-family:&quot;Times New Roman&quot;,serif"><span style="color:#222222"> &ndash; этот статус означает, что в ДОО пока нет свободного места, следовательно, ваша заявка еще не поступила в детский сад и вам необходимо ждать электронного уведомления на свою почту.</span></span></span></span></span></span></p>
+
+<p style="margin-left:0cm; margin-right:0cm; text-align:justify"><span style="font-size:11pt"><span style="background-color:white"><span style="font-family:Calibri,sans-serif"><strong><span style="font-size:14.0pt"><span style="font-family:&quot;Times New Roman&quot;,serif"><span style="color:#222222">&nbsp;&laquo;Зачисленная заявка без приказа и заявления&raquo;</span></span></span></strong><span style="font-size:14.0pt"><span style="font-family:&quot;Times New Roman&quot;,serif"><span style="color:#222222"> &ndash; этот статус означает, что зарегистрированная заявка была корректно заполнена, директор ее &laquo;одобрил&raquo; и система дала родителю 15 календарных дней для подачи всех соответствующих документов в ДОО, однако, ребенок еще не зачислен.</span></span></span></span></span></span></p>
+
+<p style="margin-left:0cm; margin-right:0cm; text-align:justify"><span style="font-size:11pt"><span style="background-color:white"><span style="font-family:Calibri,sans-serif"><strong><span style="font-size:14.0pt"><span style="font-family:&quot;Times New Roman&quot;,serif"><span style="color:#222222">&laquo;Зачисленная с приказом и заявлением&raquo;</span></span></span></strong><span style="font-size:14.0pt"><span style="font-family:&quot;Times New Roman&quot;,serif"><span style="color:#222222"> &ndash; этот статус означает, что родитель в течение 15 календарных дней подал все документы и директор зачислил ребенка в ДОО.</span></span></span></span></span></span></p>
+
+<p style="margin-left:0cm; margin-right:0cm; text-align:justify"><span style="font-size:11pt"><span style="background-color:white"><span style="font-family:Calibri,sans-serif"><strong><span style="font-size:14.0pt"><span style="font-family:&quot;Times New Roman&quot;,serif"><span style="color:#222222">&laquo;Обучающиеся, включая тех, чьи данные импортированы из ИСУО&raquo;</span></span></span></strong><span style="font-size:14.0pt"><span style="font-family:&quot;Times New Roman&quot;,serif"><span style="color:#222222"> &ndash; это дети, которые уже обучаются в вашем ДОО.</span></span></span></span></span></span></p>
+
+<p style="margin-left:0cm; margin-right:0cm; text-align:justify"><span style="font-size:11pt"><span style="background-color:white"><span style="font-family:Calibri,sans-serif"><strong><span style="font-size:14.0pt"><span style="font-family:&quot;Times New Roman&quot;,serif"><span style="color:#222222">&laquo;Отчисленный по тем или другим причинам&raquo;</span></span></span></strong><span style="font-size:14.0pt"><span style="font-family:&quot;Times New Roman&quot;,serif"><span style="color:#222222"> &ndash; этот статус означает, что ребенок был отчислен из ДОО по различным причинам (переезд, болезнь, по собственному желанию и т.д.).</span></span></span></span></span></span></p>
+
+<p style="margin-left:0cm; margin-right:0cm; text-align:justify"><span style="font-size:11pt"><span style="background-color:white"><span style="font-family:Calibri,sans-serif"><strong><span style="font-size:14.0pt"><span style="font-family:&quot;Times New Roman&quot;,serif"><span style="color:#222222">&laquo;Окончивший/выпустившийся&raquo; </span></span></span></strong><span style="font-size:14.0pt"><span style="font-family:&quot;Times New Roman&quot;,serif"><span style="color:#222222">&ndash; этот статус означает, что ребенок завершил обучение в ДОО и пошел в школу.</span></span></span></span></span></span></p>
+                    
+                    </div>
+                </div>
+
+            
+                <div class="questions_item">
+                    <div class="questions">
+                        Какая будет картина системы отчетов о зачислении у пользователей сайта?
+                    
+                    </div>
+                    <div class="answers">
+                        Пользователи смогут увидеть общую картину: загруженность садика, количество детей, количество свободных мест.
+                    
+                    </div>
+                </div>
+
+            
+                <div class="questions_item">
+                    <div class="questions">
+                        Какие документы необходимо предоставить для зачисления ребенка в ДОО?
+                    
+                    </div>
+                    <div class="answers">
+                        <p>Перечень документов, необходимых для зачисления ребенка в ДОО:</p>
+
+<p>- медицинские формы № 26/У, №063/У;</p>
+
+<p>- справка о состоянии здоровья ребенка на момент зачисления;</p>
+
+<p>- копия свидетельства о рождении ребёнка;</p>
+
+<p>- копия паспорта одного из родителей (законных представителей);</p>
+
+<p>- заключение Республиканской и Городской психолого-медико-педагогической комиссии о переводе в общеразвивающую группу ДОО в связи с завершением коррекционного обучения (при необходимости).</p>
+                    
+                    </div>
+                </div>
+
+            
+                <div class="questions_item">
+                    <div class="questions">
+                        Как осуществляется порядок комплектования групп в ДОО?
+                    
+                    </div>
+                    <div class="answers">
+                        <p>Порядок комплектования, возрастная периодизация и полная наполняемость детьми групп ДОО осуществляется в соответствии с Государственным стандартом Кыргызской Республики &laquo;Дошкольное образование и уход за детьми&raquo; и санитарно-гигиеническими нормами.</p>
+                    
+                    </div>
+                </div>
+
+            
+                <div class="questions_item">
+                    <div class="questions">
+                        Как можно включиться в электронную очередь?
+                    
+                    </div>
+                    <div class="answers">
+                        <p>Чтобы включиться в Единую электронную очередь, нужно зарегистрировать ребенка в возрасте от 6 месяцев&nbsp;до 7 лет в Едином электронном реестре на сайте balabakcha.edu.gov.kg.</p>
+                    
+                    </div>
+                </div>
+
+            
+                <div class="questions_item">
+                    <div class="questions">
+                        Как подать вторую и последующие заявки?
+                    
+                    </div>
+                    <div class="answers">
+                        <p style="margin-left:0cm; margin-right:0cm; text-align:justify"><span style="font-size:11pt"><span style="font-family:Calibri,sans-serif"><strong><span style="font-size:14.0pt"><span style="font-family:&quot;Times New Roman&quot;,serif">1.</span></span></strong><span style="font-size:12.0pt"><span style="font-family:&quot;Times New Roman&quot;,serif"> В личном кабинете родителя выбираете опцию &laquo;добавить заявку&raquo;, затем откроется новое поле.</span></span></span></span></p>
+
+<p style="margin-left:0cm; margin-right:0cm; text-align:justify"><span style="font-size:11pt"><span style="font-family:Calibri,sans-serif"><strong><span style="font-size:14.0pt"><span style="font-family:&quot;Times New Roman&quot;,serif">2.</span></span></strong> <span style="font-size:12.0pt"><span style="font-family:&quot;Times New Roman&quot;,serif">В открывшемся новом поле заполняете все необходимые данные: ФИО, пол ребенка, дата рождения, серия свидетельства о рождении, номер свидетельства о рождении, скан/фотография свидетельства о рождении, орган выдавший свидетельство о рождении, дата выдачи свидетельства, кем вы приходитесь ребенку, регион проживания, район проживания, организация (детский сад). Нажимаете кнопку &laquo;Далее&raquo;.</span></span></span></span></p>
+
+<p style="margin-left:0cm; margin-right:0cm; text-align:justify"><span style="font-size:11pt"><span style="font-family:Calibri,sans-serif"><strong><span style="font-size:14.0pt"><span style="font-family:&quot;Times New Roman&quot;,serif">3.</span></span></strong>&nbsp; <span style="font-size:12.0pt"><span style="font-family:&quot;Times New Roman&quot;,serif">Затем откроется новое окно. </span></span></span></span></p>
+
+<ol style="list-style-type:lower-alpha">
+	<li style="text-align:justify"><span style="font-size:11pt"><span style="font-family:Calibri,sans-serif"><span style="font-size:12.0pt"><span style="font-family:&quot;Times New Roman&quot;,serif">В случае, наличия льготы выбирает тип льготы, заполняете серию и номер документа, дату выдачи и прикрепляете скан/фотография документа. </span></span></span></span></li>
+	<li style="text-align:justify"><span style="font-size:11pt"><span style="font-family:Calibri,sans-serif"><span style="font-size:12.0pt"><span style="font-family:&quot;Times New Roman&quot;,serif">Если нет льготы, то выбираете тип льготы &laquo;нет льготы&raquo;.</span></span></span></span></li>
+</ol>
+
+<p style="margin-left:0cm; margin-right:0cm; text-align:justify"><span style="font-size:11pt"><span style="font-family:Calibri,sans-serif"><span style="font-size:12.0pt"><span style="font-family:&quot;Times New Roman&quot;,serif">Далее нажимаете кнопку <strong>&laquo;Подать заявку&raquo;</strong>.</span></span></span></span></p>
+                    
+                    </div>
+                </div>
+
+            
+                <div class="questions_item">
+                    <div class="questions">
+                        Каков порядок постановки ребенка в электронную очередь?
+                    
+                    </div>
+                    <div class="answers">
+                        <p>Родители (законные представители):</p>
+
+<p>- вносят необходимые данные о ребенке для регистрации в электронной очереди на получение места в ДОО на территории Кыргызской Республики,</p>
+
+<p>- после прохождения регистрации родители получают уведомление о наличии свободного места (на электронную почту и/или мобильное приложение);</p>
+
+<p>- проверить статуса ребенка в очереди можно по номеру свидетельства рождения ребенка или по полученному регистрационному номеру на портале ЕЭР;</p>
+
+<p>- получают уведомление о наличии свободного места в ДОО на электронную почту и в течение 15 календарных&nbsp;дней со дня получения уведомления должны прийти в ДОО;</p>
+
+<p>- предоставляют необходимые документы по запросу ДОО для зачисления ребенка в группу согласно Государственного стандарта Кыргызской Республики &ldquo;Дошкольное образование и уход за детьми&rdquo;.</p>
+                    
+                    </div>
+                </div>
+
+            
+                <div class="questions_item">
+                    <div class="questions">
+                        Какая будет картина системы отчетов о зачислении у пользователей сайта?
+                    
+                    </div>
+                    <div class="answers">
+                        Пользователи смогут увидеть общую картину: загруженность садика, количество детей, количество свободных мест.
+                    
+                    </div>
+                </div>
+
+            
+                <div class="questions_item">
+                    <div class="questions">
+                        В каких случаях сохраняется место за ребенком, посещающим детский сад (ДОО)?
+                    
+                    </div>
+                    <div class="answers">
+                        <p>Место за ребенком, посещающим ДОО, сохраняется в следующих случаях:</p>
+
+<p>- по болезни ребенка при предоставлении медицинской справки;</p>
+
+<p>- при пребывании ребенка в условиях карантина;</p>
+
+<p>- при прохождении санаторно-курортного лечения (не более 30 календарных дней);</p>
+
+<p>- отпуска у родителей (не более 60 календарных дней);</p>
+
+<p>- иных случаев, связанных с семейными обстоятельствами по заявлению родителей (не более 45 календарных дней).</p>
+                    
+                    </div>
+                </div>
+
+            
+                <div class="questions_item">
+                    <div class="questions">
+                        Что такое регистрационный номер?
+                    
+                    </div>
+                    <div class="answers">
+                        Регистрационный номер – это номер, который получает родитель или его представитель при подаче заявления на Едином электронном реестре (ЕЭР) на сайте balabakcha.edu.gov.kg.
+                    
+                    </div>
+                </div>
+
+            
+                <div class="questions_item">
+                    <div class="questions">
+                        Какие существуют льготы для зачисления ребенка в сад?
+                    
+                    </div>
+                    <div class="answers">
+                        <p><span style="font-size:12px"><span style="font-family:Arial,Helvetica,sans-serif">Льготы для зачисления ребенка в детский сад имеют льготные категории граждан согласно законодательству КР. Система &ldquo;Электронного комплектования детьми групп ДОО&rdquo; на программном уровне обеспечивает приоритетность в электронной очереди в ДОО:</span></span></p>
+
+<ul>
+	<li style="text-align:justify">
+	<p><span style="font-size:12px"><span style="font-family:Arial,Helvetica,sans-serif">детей-сирот и полусирот, оставшихся без попечения родителей;</span></span></p>
+	</li>
+	<li style="text-align:justify">
+	<p><span style="font-size:12px"><span style="font-family:Arial,Helvetica,sans-serif">детей&nbsp; родителей инвалидов I и II группы;</span></span></p>
+	</li>
+	<li style="text-align:justify">
+	<p><span style="font-size:12px"><span style="font-family:Arial,Helvetica,sans-serif">детей из многодетных семей (имеющих 5 и более детей);</span></span></p>
+	</li>
+	<li style="text-align:justify">
+	<p><span style="font-size:12px"><span style="font-family:Arial,Helvetica,sans-serif">детей участников военных событий (жертв и участников аксыйских событий 2002 года, апрельских/июньских событий 2010 года);</span></span></p>
+	</li>
+	<li style="text-align:justify">
+	<p><span style="font-size:12px"><span style="font-family:Arial,Helvetica,sans-serif">Семьям погибших в результате аварии на Чернобыльской АЭС, умерших вследствие лучевой болезни, умерших инвалидов и умерших участников 1986-1987 годов;</span></span></p>
+	</li>
+	<li style="text-align:justify">
+	<p><span style="font-size:12px"><span style="font-family:Arial,Helvetica,sans-serif">Дети первого и двух последующих поколений, имеющие наследственные заболевания и аномалии развития вследствие генетических изменений у родителей, подвергшихся воздействию радиации вследствие чернобыльской катастрофы;</span></span></p>
+	</li>
+	<li style="text-align:justify">
+	<p><span style="font-size:12px"><span style="font-family:Arial,Helvetica,sans-serif">Семьям погибших военнослужащих при исполнении обязанностей военной службы;</span></span></p>
+	</li>
+	<li style="text-align:justify">
+	<p><span style="font-size:12px"><span style="font-family:Arial,Helvetica,sans-serif">Семьям сотрудников внутренних дел, погибших в связи с исполнением служебных обязанностей или служебного долга, а также умерших после увольнения со службы вследствие ранения, травмы, заболевания, полученных в период прохождения службы.</span></span></p>
+	</li>
+</ul>
+                    
+                    </div>
+                </div>
+
+            
+                <div class="questions_item">
+                    <div class="questions">
+                        Когда нужно регистрировать ребёнка в электронной очереди?
+                    
+                    </div>
+                    <div class="answers">
+                        <p>Ребёнка нужно регистрировать сразу после 6 месяцев после рождения и при наличии&nbsp;Свидетельства о рождении ребёнка.</p>
+                    
+                    </div>
+                </div>
+
+            
+                <div class="questions_item">
+                    <div class="questions">
+                        ИНФОРМАЦИЯ ОБ ОЧЕРЕДИ В ДОО
+                    
+                    </div>
+                    <div class="answers">
+                        <p>http://kabinet.balabakcha.edu.gov.kg/queue-amount-info</p>
+                    
+                    </div>
+                </div>
+
+            
+                <div class="questions_item">
+                    <div class="questions">
+                        Как определяется приоритетность льготных категорий граждан в электронной системе очереди?
+                    
+                    </div>
+                    <div class="answers">
+                        Приоритетность в электронной очереди в ДОО между льготными категориями граждан, установленными законодательно, определяет Система “Электронного комплектования детьми групп ДОО” с разницей миллисекунд при подаче Заявителем электронного заявления.
+                    
+                    </div>
+                </div>
+
+            
+                <div class="questions_item">
+                    <div class="questions">
+                        Могут ли сотрудники Министерства образования и науки Кыргызской Республики регистрировать своих детей?
+                    
+                    </div>
+                    <div class="answers">
+                        Да, могут.
+                    
+                    </div>
+                </div>
+
+            
+                <div class="questions_item">
+                    <div class="questions">
+                        Как получить регистрационный номер?
+                    
+                    </div>
+                    <div class="answers">
+                        <p>Чтобы получить регистрационный номер необходимо зарегистрировать ребенка в возрасте от 6 мсяцев&nbsp;до 7 лет в Едином электронном реестре на сайте balabakcha.edu.gov.kg.</p>
+                    
+                    </div>
+                </div>
+
+            
+                <div class="questions_item">
+                    <div class="questions">
+                        Кем оформляется отчисление ребенка из ДОО?
+                    
+                    </div>
+                    <div class="answers">
+                        Отчисление ребенка из ДОО оформляется приказом директора ДОО по заявлению педагогов.
+                    
+                    </div>
+                </div>
+
+            
+                <div class="questions_item">
+                    <div class="questions">
+                        Через какой промежуток времени ребёнок будет зачислен в сад?
+                    
+                    </div>
+                    <div class="answers">
+                        <p>&nbsp; &nbsp; &nbsp; &nbsp; Определенный промежуток времени предугадать невозможно, поскольку в разных группах может быть разное количество мест. В каждой возрастной группе все места распределяются по очереди, поэтому, в зависимости от возрастных групп, может получиться так, что те, кто встал в очередь раньше, получат места позже.</p>
+
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Дети растут, ребенок, который не попал в ясли, через год будет подходить по возрасту в младшую группу. Кроме того, все дети стоят в одной очереди, но по закону первыми места получают &laquo;льготники&raquo;, остальные дети идут в порядке общей очереди. Поэтому очередность отличается от хронологического порядка. &laquo;Льготники&raquo;, как и обычные дети, бывают разного возраста, следовательно, система зачисляет льготников первыми в подходящие по возрасту группы.</p>
+                    
+                    </div>
+                </div>
+
+            
+                <div class="questions_item">
+                    <div class="questions">
+                        Какие привилегии имеют дети сотрудников Министерства образования и науки Кыргызской Республики?
+                    
+                    </div>
+                    <div class="answers">
+                        <p>Никаких, если ребенок не относится к категории &laquo;льготников&raquo;. Они идут в общей очереди.</p>
+                    
+                    </div>
+                </div>
+
+            
+        </div>
+        <div class="contact">
+            <h1>Не нашли ответ? Свяжитесь с нами!</h1>
+            <div class="write_to_us">
+                <h3>Напишите</h3>
+                <a href="/#contacts" class="btn-info">Задать вопрос</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <footer>
+        <div class="footer">
+            <div class="information">
+                <h3>ИНФОРМАЦИЯ О НАС</h3>
+                <div class="footer_blocks">
+                    <ul class="first_block">
+                        <li><a href="/ru/">ГЛАВНАЯ</a></li>
+                        <li><a href="/ru/project/" target="_blank">О ПРОЕКТЕ</a></li>
+                        <li><a href="/ru/question_answer/" target="_blank">ВОПРОСЫ - ОТВЕТЫ</a></li>
+                        <li><a href="/ru/news/" target="_blank">НОВОСТИ</a></li>
+                    </ul>
+                    <ul class="second_block">
+                        <li><a href="/ru/documents/" target="_blank">НПА</a></li>
+                        <li><a href="/#infographics" target="_blank">ИНФОГРАФИКА</a></li>
+						         <li><a href="http://statics.balabakcha.edu.gov.kg/" class="menu"> СТАТИСТИКА</a></li>
+                        <li><a href="/#contacts" target="_blank">ОБРАТНАЯ СВЯЗЬ</a></li>
+                        <li><a href="/#contacts" target="_blank">КАК НАС НАЙТИ</a></li>
+                    </ul>
+                </div>
+
+            </div>
+            <div class="socials">
+                <ul>
+                    <li><a href="https://www.facebook.com/balabakcha.edu.gov.kg/" class="sm-icon" target="_blank">
+                        <i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+                    </li>
+                    <li><a href="https://ok.ru/group/53508807983263" class="sm-icon" target="_blank">
+                        <i class="fa fa-odnoklassniki-square" aria-hidden="true"></i>
+                    </a></li>
+                    <li><a href="https://www.instagram.com/balabakcha.edu.gov.kg/?hl=ru" class="sm-icon" target="_blank">
+                        <i class="fa fa-instagram" aria-hidden="true"></i>
+                    </a></li>
+                    <li><a href="https://www.youtube.com/channel/UCqBBZ0extsXRaxZ2g9I6yCA?view_as=subscriber" class="sm-icon" target="_blank">
+                        <i class="fa fa-youtube-square" aria-hidden="true"></i>
+                    </a></li>
+                    <li><a href="https://vk.com/public157066881" class="sm-icon" target="_blank">
+                        <i class="fa fa-vk" aria-hidden="true"></i>
+                    </a></li>
+					  <li><a href="https://t.me/balabakcha_bot" class="sm-icon" target="_blank">
+                        <i class="fa fa-telegram" aria-hidden="true"></i>
+                    </a></li>
+                </ul>
+                <p>www.balabakcha.edu.gov.kg © 2017 <br>
+                    Все права защищены</p>
+            </div>
+        </div>
+    </footer>
+
+</div>
+<script src="/static/js/script.js"></script>
+<script async defer src="https://www.googletagmanager.com/gtag/js?id=UA-110078988-1"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+        dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-110078988-1');
+</script>
+ 
+<script type="text/javascript" >
+    (function (d, w, c) {
+        (w[c] = w[c] || []).push(function() {
+            try {
+                w.yaCounter48067940 = new Ya.Metrika({
+                    id:48067940,
+                    clickmap:true,
+                    trackLinks:true,
+                    accurateTrackBounce:true,
+                    webvisor:true,
+                    trackHash:true
+                });
+            } catch(e) { }
+        });
+
+        var n = d.getElementsByTagName("script")[0],
+            s = d.createElement("script"),
+            f = function () { n.parentNode.insertBefore(s, n); };
+        s.type = "text/javascript";
+        s.async = true;
+        s.src = "https://mc.yandex.ru/metrika/watch.js";
+
+        if (w.opera == "[object Opera]") {
+            d.addEventListener("DOMContentLoaded", f, false);
+        } else { f(); }
+    })(document, window, "yandex_metrika_callbacks");
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/48067940" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+ 
+ 
+ <script type="text/javascript">var nns_clientsJQloaded=!1;"undefined"==typeof $&&"undefined"==typeof jQuery||(nns_clientsJQloaded=!0)</script>
+<script type="text/javascript" src="//cdn.nanosemantics.ru/smb_v3.5g/prod/d163f8c2-b87b-4579-b045-b7fabcba785c/scripts/jquery.min.js"></script>
+<script type="text/javascript">vishnuJQuery=jQuery,nns_clientsJQloaded&&vishnuJQuery.noConflict(!0),vishnuSettings={clientConfig:{language:"ru_RU"}}</script>
+<script type="text/javascript" src="//cdn.nanosemantics.ru/smb_v3.5g/prod/d163f8c2-b87b-4579-b045-b7fabcba785c/scripts/head.load.min.js" data-headjs-load="//cdn.nanosemantics.ru/smb_v3.5g/prod/d163f8c2-b87b-4579-b045-b7fabcba785c/scripts/load.min.js"></script>
+<div class="vishnu-container"></div>
+
+</body>
+</html>
